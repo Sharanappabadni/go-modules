@@ -1,0 +1,18 @@
+install go module as 
+* go mod init
+
+then install releted packages using in project 
+
+protoc --> go get google.golang.org/protobuf/cmd/protoc-gen-go
+grpc --> go get google.golang.org/grpc
+protobuf ---> go get github.com/golang/protobuf
+
+
+List current module and all dependencies 
+* go list -m all
+
+once done need to change from inderect to direct need to do in go.mod
+* go mod vendor
+
+
+
